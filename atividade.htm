@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Adoniran</title>
+    <style>
+         body{
+            margin: 0;
+            background-color: rgb(235, 230, 230);
+            font-family: "Open Sans", sans-serif;
+            font-weight: 100;
+            
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #F1F1F1;
+            width: 90%;
+            max-width: 1200px;
+            margin: 13px auto;
+        }
+        .cabecalho{
+            background-color: #2E6BAD;
+            /* height: 250px; */
+            padding: 30px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+        }
+        .cabecalho img{
+            max-width: 250px;
+        }
+        .menu{
+            background-color:#333333;
+            display: flex;
+            justify-content: flex-start;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+        }
+        .menu a:hover{
+            background-color: rgb(201, 194, 194);
+            transition: 0.3s;
+        }
+
+        .menu a:last-child{
+            background-color: #333333;
+            
+        }
+       
+        .corpo{
+            display: flex;
+            justify-content: space-between;
+        }
+          .coluna-esquerda{
+            background-color: #F1F1F1;
+            flex-grow: 1;
+            padding: 10px;
+
+        }
+        .coluna-esquerda img{
+            max-width: 180px ;
+            width: 100%;
+
+        }
+      
+        .coluna-centro{
+            /* background-color: blueviolet; */
+            flex-grow: 6;
+            padding: 10px;
+            max-width: 60%;
+        }
+        .rodape{
+            background-color: #DDDDDD;
+            color:black;
+            padding: 39px;
+           
+        }
+           .cabecalho{
+            flex-direction: column;
+            
+          }
+          .coluna-centro img{
+            max-width: 600px;
+            width: 100%;
+          }
+          .rodape p{
+            text-align: center;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 670px){
+
+        
+          .cabecalho{
+            justify-content: center;
+          }   
+          .cabecalho img{
+            max-width: 180px;
+            width: 100%;
+          }  
+          .menu{
+            flex-direction: column;
+          }   
+          .menu a{
+            padding: 7px;
+          }
+          .menu a:last-child{
+            margin: 0;
+          }
+          .corpo{
+            flex-direction: column;
+          }
+          .coluna-centro{
+            max-width: 100%;
+            order: 1;
+          }
+          .coluna-esquerda{
+            order: 2;
+          }
+          .coluna-direita{
+            order: 3;
+          
+          }
+          
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="cabecalho">
+            <H1>Senac São paulo </H1>             
+            <p>Desenvolvimento de Layout com Flex layout</p>            
+        </div>
+        <div class="menu">
+            <a href="#">Início</a>
+            <a href="#">Loja</a>
+            <a href="#">Contato</a>
+            <a href="#">Sobre</a>
+            
+        </div>
+          <div class="corpo">
+            <div class="coluna-esquerda">
+                <h3>O Senac</h3>
+                   <img src="img/logosenac.png" alt="Logotipo ESN">
+                <p>A vida me ensiou a nunca desistir,mais sempre procurar evoluir, sempre correndo atrás dos meus sonhos!</p>
+            </div>
+            <div class="coluna-centro">
+                <h1>Esse é meu primeiro site</h1>
+                <p>Adoniran Salles, Nov 25,2032</p>
+                <img src="img/logosenac.png" alt="">
+                <p>
+                    Esse é um novo desafio para o aluno Adoniran, que vem se redescobrindo e aprendendo cada dia mais e etá em evolução, o professo estevinho vem sempre ajudando e mostrando o caminho correto, nos mostrando onde estamos acertando ou errando com as críticas mais construtivas para que possamos desenvolver o melhor trabalho.
+                </p>
+            </div>
+            
+        </div>
+        <div class="rodape">
+            <p>Senac &copy;  2032.</p>
+        </div>
+    </div>
+</body>
+</html>
